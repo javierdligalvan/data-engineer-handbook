@@ -15,7 +15,7 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// It this case, you could add all dependencies under requirements.txt so they are installed inside the container after creation.
-	// "postCreateCommand": "pip install --user -r requirements.txt",
+	//"postCreateCommand": "pip install --user -r requirements.txt",
 
 	// Configure tool-specific properties.
 	"customizations": {

@@ -12,7 +12,7 @@ Construct the following eight queries:
 
 - A cumulative query to generate `device_activity_datelist` from `events`
 
-- A `datelist_int` generation query. Convert the `device_activity_datelist` column into a `datelist_int` column 
+- A   s<  S>. Convert the `device_activity_datelist` column into a `datelist_int` column 
 
 - A DDL for `hosts_cumulated` table 
   - a `host_activity_datelist` which logs to see which dates each host is experiencing any activity
@@ -23,7 +23,8 @@ Construct the following eight queries:
    - month
    - host
    - hit_array - think COUNT(1)
-   - unique_visitors array -  think COUNT(DISTINCT user_id)
+   - 
+    array -  think COUNT(DISTINCT user_id)
 
 - An incremental query that loads `host_activity_reduced`
   - day-by-day
