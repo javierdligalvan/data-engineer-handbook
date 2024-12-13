@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/postgres
 {
-	"name": "Python 3 & PostgreSQL",
+	"name": "Python 3 & PostgreSQL and Spark 3 with Iceberg",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
@@ -11,7 +11,7 @@
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// This can be used to network with other containers or the host.
-	"forwardPorts": [5432],
+	"forwardPorts": [5432, 9000, 9001, 8888, 8080, 8181, 10000, 10001],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// It this case, you could add all dependencies under requirements.txt so they are installed inside the container after creation.
