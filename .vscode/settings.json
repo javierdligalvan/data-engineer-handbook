@@ -1,0 +1,7 @@
+{
+    "python.testing.pytestArgs": [
+        "bootcamp/materials/3-spark-fundamentals/src/"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
