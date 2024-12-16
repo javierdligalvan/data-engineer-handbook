@@ -1,5 +1,8 @@
 chispa
 pytest
+pytest-coverage
+pyspark==3.5.3
+pyspark[sql]
 jupyter==1.0.0
 spylon-kernel==0.4.1
 pyiceberg[pyarrow,duckdb,pandas]==0.7.1

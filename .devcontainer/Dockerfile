@@ -31,7 +31,7 @@ WORKDIR ${SPARK_HOME}
 # Might need to update Spark version if it cannot be found under the download path because there is a newer version
 ENV SPARK_VERSION=3.5.3
 ENV SPARK_MAJOR_VERSION=3.5
-ENV ICEBERG_VERSION=1.6.0
+ENV ICEBERG_VERSION=1.5.2
 
 # Download spark
 RUN mkdir -p ${SPARK_HOME} \
@@ -45,7 +45,7 @@ RUN curl https://repo1.maven.org/maven2/org/apache/iceberg/iceberg-spark-runtime
 RUN mkdir -p /home/iceberg /home/iceberg/localwarehouse /home/iceberg/notebooks /home/iceberg/warehouse /home/iceberg/spark-events /home/iceberg/data
 
 COPY ../bootcamp/materials/3-spark-fundamentals/data /home/iceberg/data
-COPY ../bootcamp/materials/3-spark-fundamentals/notebooks /home_iceberg/notebooks
+COPY ../bootcamp/materials/3-spark-fundamentals/notebooks /home/iceberg/notebooks
 
 # Add a notebook command
 RUN echo '#! /bin/sh' >> /bin/notebook \
