@@ -1,1 +1,6 @@
 .ipynb_checkpoints/
+**/__pycache__/
+*.bin*
+*xl.meta*
+*.minio*
+*part.1*

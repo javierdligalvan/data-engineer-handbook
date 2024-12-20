@@ -1,9 +1,5 @@
 from pyspark.sql import SparkSession
 
-
-
-
-
 def do_monthly_user_site_hits_transformation(spark, dataframe, ds):
     query = f"""
     SELECT
