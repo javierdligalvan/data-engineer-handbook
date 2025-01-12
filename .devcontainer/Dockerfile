@@ -25,6 +25,7 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 # Optional env variables
 ENV SPARK_HOME=${SPARK_HOME:-"/opt/spark"}
 ENV PYTHONPATH=$SPARK_HOME/python:$SPARK_HOME/python/lib/py4j-0.10.9.7-src.zip:$PYTHONPATH
+ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 
 WORKDIR ${SPARK_HOME}
 
@@ -79,6 +80,5 @@ RUN chmod u+x /opt/spark/sbin/* && \
 
 COPY ../bootcamp/materials/3-spark-fundamentals/pyiceberg.yaml /root/.pyiceberg.yaml
 COPY ../bootcamp/materials/3-spark-fundamentals/entrypoint.sh .
-
 
 
